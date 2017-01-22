@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+html {
+    /*    background-color: #d3d3d3;*/
+    font-size: 1em;
+}
+
+body {
+    font-family: "Century Gothic", "Georgia", sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    
+    width: 1200px;
+    max-width: 100%;
+    background-image: url(http://res.cloudinary.com/codeococcus/image/upload/v1464489965/AdobeStock_107618103_WM_lj3hjv.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-color: whitesmoke;
+}
+#rotateBackground{padding:0;margin:0;width:100%;position:absolute;top:0;left:0;z-index:-1}
+#rotateBackground img{position:absolute;left:0;top:0;width:100%;z-index:1}
+#rotateBackground img.active{z-index:3}
+
+.padded {
+    border-top: 1px solid white;
+    padding-top: 148px;
+}
+#container {
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.landingPage {
+    background-color: #e9e8e8;
+}
+
+/*the header collapsed due to the floated elements. Using the clearfix method from the Lynda video "CSS Page Layouts - Clearfix technique. Good read on the topic: (https://css-tricks.com/all-about-floats/)*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    margin: 0;
+    background-color: whitesmoke;
+    
+
+}
+
+
+
+.sticky h1, .sticky h2 {
+    display: none;
+}
+.sticky #logo a {
+    height: 40px;
+    margin: 0 auto;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+    #logo a {
+        display: block;
+            width: 134px;
+        height: 70px;
+        background-image: url('../images/logo_orange.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 5px auto;
+    }
+
+h1 {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: darkgrey;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 100;
+    color: #FC8B80;
+}
+
+#pageID, .className {
+    font-family: "Ruthie", "Century Gothic", "Georgia", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+p {
+    line-height: 1.8em;
+}
+
+#specialPromo {
+    width: 30%;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-top: 120px;
+    margin-left: 32px;
+    padding-bottom: 60px;
+    text-align: center;
+   
+}
+
+#specialPromo p, #specialPromo h3 {
+        
+    background-color: rgba(230, 240, 249, 0.68);
+
+    }
+
+.mainContent {
+    background-color: whitesmoke;
+    margin-top: 175px;
+}
+
+.main {
+    display: inline-block;
+    padding: 2.7%;
+    width: 60%;
+    /*background-color: whitesmoke;*/
+}
+
+.main h3 {
+    padding-bottom: 15px;
+}
+
+.main p {
+    padding-bottom: 20px;
+}
+section {
+    margin: 0 auto 30px auto;
+    
+    background-color: rgb(230, 240, 249);
+}
+section h2 {
+    width: 100%;
+    font-size: 2em;
+    background-color: rgba(252, 139, 128, 0.75);
+    color:white; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.additional {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    color: white;
+    padding: 1.7%;
+    /*background-color: whitesmoke;*/
+    vertical-align: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+     
+}
+
+.location, .hours {
+/*    background-color: grey;*/
+    color: #212121;
+    padding: 3%;
+}
+.additional h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.massage  {
+    height: 220px;
+    background-image: url(../images/wellness2.jpeg);
+    
+}
+.body {
+    height: 220px;
+    background-image: url(../images/wellness3.jpeg);  
+}
+
+.face {
+    height: 220px;
+    background-image: url(../images/wellness4.jpeg);  
+
+}
+
+.nutritionist{
+    height: 220px;
+    background-image: url(../images/wellness5.jpeg);  
+}
+
+.sauna {
+    height: 220px;
+    background-image: url(../images/sauna.jpeg);  
+}
+
+
+blockquote {
+    padding: 5%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: darkgray;
+    -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+    border-radius: 50px 50px 10px 50px;
+    -moz-border-radius: 50px 50px 10px 50px;
+    -webkit-border-radius: 50px 50px 10px 50px;
+    border: 0px solid #000000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+blockquote em {
+    font-family: "Ruthie", "Century Gothic", "Georgia", sans-serif;
+    text-align:right;
+    font-size: larger;
+}
+
+#contactInfo {
+    background-color: rgba(252, 139, 128, 0.75);
+    width: 130px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+    margin: -20px auto 20px auto;
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.75);
+}
+
+footer {
+    background-color: rgb(230, 240, 249);
+    font-size: 75%;
+    margin-top: -150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+    footer li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 1em;
+        font-style: italic;
+        vertical-align: bottom;
+    }
+
+    footer ul {
+        
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    footer li p {
+        background-color: white;
+        padding: 20px;
+        border-radius: 70px;
+    }
+
+    footer li a {
+        color: dimgrey;
+    }
+
+.rightFloat {
+    float: right;
+}
+
+.leftFloat {
+    float: left;
+}
+/*table formatting*/
+tr, td {
+    padding: 5px;
+    text-align: left;
+}
+
+/*change the default selection colors*/
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+/*embed responsive iframe styles*/
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+@media all and (max-width:930px) {
+    /* CSS rules */
+    .main {
+        background-color: rgb(230, 240, 249);
+    }
+    #wrapper {
+        background-image: url('../images/AdobeStock_107618064_WM.jpeg');
+    }
+    .padded {
+        border-top: 1px solid white;
+    padding-top: 160px;
+    }
+    #logo {
+        float: none;
+    }
+    #logo a {
+        width: 70px;
+    }
+    #logo h1 {
+        display:none;
+        width: 25%;
+    }
+    #specialPromo {
+        font-size: 1.2em;
+        padding-top: 70px;
+        padding-bottom: 0;
+        margin-left: 65%;
+    }
+}
+
+
+@media all and (max-width:741px) {
+    .padded {
+        border-top: 1px solid white;
+    padding-top: 90px;
+    }
+
+    #logo a {
+        float:left;
+    }
+    #pageID {
+        width: 50%;
+    }
+    .main {
+        
+        width: 90%;
+        display: block;
+        padding:10px 5%;
+        margin-top: 155px; 
+    }
+    #specialPromo {
+        font-size: 1.2em;
+        padding-top: 50px;
+        padding-bottom: 0;
+        margin-left: 65%;
+    }
+    .additional {
+        width: 100%;
+        width: 90%;
+        display: block;
+        padding:20px 5%;
+    }
+}
+
+
+@media all and (max-width:760px) {
+    /* CSS rules */
+    .extraMargin {
+        margin-left:20px;
+    }
+    .main {
+        margin-top: 20px;
+    }
+    
+    
+    #contactInfo {
+        padding: 25px;
+    }
+}
+
+@media all and (max-width:700px) {
+    .padded {
+        border-top: 1px solid white;
+    padding-top: 80px;
+    }
+
+    #wrapper {
+        background-image: url('../images/AdobeStock_107617974_WM.jpeg');
+        
+    }
+    #logo a {
+        position: relative;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        /*margin-top: -10px;*/
+    }
+    #specialPromo {
+        
+    width: 90%;
+    
+     padding-top: 30px; 
+    margin: 100px auto;
+    margin-bottom: 0;
+    }
+    .extraMargin {
+        margin-left:0;
+    }
+    .main {
+        /*margin-top: 100px;*/
+        background-color: rgb(230, 240, 249);
+    }
+    section .main {
+        margin-top: 0;
+    }
+    #contactInfo {
+        padding: 25px;
+       
+    }
+    footer {
+        margin-top: 0;
+    }
+    footer li {
+        
+        margin-right: 10px;
+        font-size: 0.8em;
+        
+    }
+}
+
+	/* start reCAPTCHA styles */
+form {
+/*    background-color: #d3d3d3;*/
+    padding: 2%;
+    border: 1px solid #d3d3d3;
+}
+		
+		/* writes to small text above reCAPTCHA upon failure */
+		.dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
+input, select {
+    padding: 5px;
+}
+        
+         input, textarea {
+             background-color:#f1f1f1;
+             border:1px solid #ccc;
+        }
+textarea {
+    width: 300px;
+    font-family:baskerville, palatino, 'palatino linotype', georgia, serif;
+    -webkit-box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+-moz-box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+}
+input[type='text'], input[type='email'] {
+    width: 200px;
+    font-family:baskerville, palatino, 'palatino linotype', georgia, serif;
+        -webkit-box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+-moz-box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+}
+input[type='checkbox'], input[type='radio'] {
+    margin-left: 10px;
+}
+        input[type="submit"], input[type="button"] {
+          background-color: #fff;
+          border-radius: 4px;
+          border: solid 1px #ccc;
+          padding: 0.3em 0.5em;
+            font-size: 1em;
+            font-variant: small-caps;
+            font-family:baskerville, palatino, 'palatino linotype', georgia, serif;
+            -webkit-box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+-moz-box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+box-shadow: 9px 9px 35px -8px rgba(94,87,94,1);
+            margin-top: 15px;
+        }
+
+        fieldset {
+          border: 1px solid #ccc;
+          max-width: 350px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            color: coral;
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: coral;
+}
+
+        
+        /* end reCAPTCHA styles */
+
+
+@media all and (max-width:512px) {
+
+    .mainContent {
+        margin-top: 0;
+        
+    }
+    .padded {
+        border-top: 1px solid white;
+    padding-top: 80px;
+    }
+    
+}
+
+@media all and (max-width:415px) {
+    .mainContent {
+        margin-top: 10px;
+        
+    }
+    .leftFloat {
+        font-size: 0.5em;
+    }
+    
+}

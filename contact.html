@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Card.IO Wellness Main Page Template</title>
+    <link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Responsive navigation styles    -->
+    <link href='css/slimmenu.min.css' rel='stylesheet' type='text/css' />
+    <!--  Rolling testemonials styles  -->
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/jqueryUI.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+
+
+    <!--[if lt IE 8]>
+    <style>
+    /* For IE < 8 (trigger hasLayout) */
+    .clearfix {
+        zoom:1;
+    }
+    </style>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="container">
+
+        <header class="landingPage clearfix">
+            <div id="logo">
+                <a href="index.html"></a>
+                <h1>CARD.IO Wellness</h1>
+                <h2 id="pageID">Follow your heart</h2>
+
+            </div>
+            <nav>
+                <ul id="navigation" class="slimmenu"></ul>
+            </nav>
+        </header>
+
+
+        <main class="main">
+            <h3>SCHEDULE AN APPOINTMENT</h3>
+            <!-- START HTML FORM -->
+            <form id='form'>
+                <div>
+                    <label>
+                        Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" autofocus />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" />
+                    </label>
+                </div>
+                <!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
+
+                <div>
+
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Which Services Are You Interested In?</legend>
+                        <input type="checkbox" name="Interested_In[]" value="Massage" tabindex="40" />Massage <br />
+                        <input type="checkbox" name="Interested_In[]" value="Facial" />Facial<br />
+                        <input type="checkbox" name="Interested_In[]" value="Body Treatment" />Body Treatment <br />
+                        <input type="checkbox" name="Interested_In[]" value="Nutritionist" />Nutritionist <br />
+                        <input type="checkbox" name="Interested_In[]" value="Sauna" /> Sauna <br />
+                    </fieldset>
+                </div>
+                <label>
+                    <p>Date:<br /> <input type="text" id="datepicker"></p>
+                </label>
+                <p>Time:</p>
+                <div id="radio">
+                    <input type="radio" id="radio1" name="radio"><label for="radio1">Morning</label>
+                    <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Afternoon</label>
+                    <input type="radio" id="radio3" name="radio"><label for="radio3">Evening</label>
+                </div>
+
+                <div>
+                    <label>
+                        How Did You Hear About Us?:<br />
+                        <select name="How_Did_You_Hear_About_Us?" required="required" title="How You Heard is required" tabindex="30">
+                            <option value="">Choose How You Heard</option>
+                            <option value="Phone">A Friend</option>
+                            <option value="Web">Newspaper</option>
+                            <option value="Magazine">TV Commercial</option>
+                            <option value="A Friend">Internet</option>
+                            <option value="Other">Other website</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Would you like to join our mailing list?</legend>
+
+                        <input type="radio" name="Join_Mailing_List?" value="Yes"
+                               required="required" title="Mailing list is required" tabindex="50" /> Yes <br />
+                        <input type="radio" name="Join_Mailing_List?" value="No" /> No <br />
+                    </fieldset>
+                </div>
+                <div>
+                    <label>
+                        Comments:<br /><textarea name="Comments" rows="8" placeholder="Your comments go here" tabindex="60"></textarea>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="submit" value="submit" />
+                </div>
+            </form>
+            <!-- END HTML FORM -->
+
+
+        </main>
+        <aside class="additional">
+            <section class="location">
+                <h3>LOCATION</h3>
+                <div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362281.85410918!2d20.14240100511265!3d44.81490279216484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2sBelgrade%2C+Serbia!5e0!3m2!1sen!2sus!4v1465351184188' width='400' height='300' frameborder='0' style='border:0' allowfullscreen></iframe></div>
+            </section>
+            <section class="hours">
+                <h3>HOURS</h3>
+                <table>
+                    <tr>
+                        <td>Monday:</td>
+                        <td>9:00AM - 7:00PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday:</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday:</td>
+                        <td>9:00AM - 7:00PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday:</td>
+                        <td>9:00AM - 7:00PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday:</td>
+                        <td>9:00AM - 7:00PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday:</td>
+                        <td>12:00AM - 7:00PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday:</td>
+                        <td>12:00AM - 7:00PM</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+        </aside>
+
+    </div>
+    <div id="contactInfo">
+        <p translate="no">
+            CARD.IO Wellness<br>
+            123 Main St.<br>
+            Belgrade<br>
+            Serbia
+        </p>
+
+    </div>
+    <footer>
+        <ul class="footer">
+
+            <li class="leftFloat">Copyright &copy;2016</li>
+            <li class="leftFloat">All right reserved</li>
+
+            <li class="rightFloat"><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.gordanaminovska.com%2Fweb150%2Ffinal%2F">Valid HTML5</a></li>
+            <li class="rightFloat"><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttp%253A%252F%252Fwww.gordanaminovska.com%252Fweb150%252Ffinal%252F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a></li>
+            <li class="rightFloat"><a href="presentation.html">Summary</a></li>
+        </ul>
+    </footer>
+    </div>
+    <!--The responsive navigation plugin script (http://adnantopal.github.io/slimmenu/)-->
+    <script src="js/jquery.slimmenu.min.js" type="text/javascript"></script>
+    <!--My jquery    -->
+    <script src="js/myScript.js" type="text/javascript"></script>
+    <!--initialize the jquery ui widgets    -->
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+            $("#radio").buttonset();
+
+        });
+    </script>
+
+</body>
+</html>
